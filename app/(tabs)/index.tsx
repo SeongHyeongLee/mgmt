@@ -6,6 +6,9 @@ import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 
+
+import "../../global.css";
+
 export default function HomeScreen() {
   return (
     <ParallaxScrollView
@@ -50,6 +53,7 @@ export default function HomeScreen() {
           <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
           <ThemedText type="defaultSemiBold">app-example</ThemedText>.
         </ThemedText>
+        <ThemedText className="flex-1 justify-center items-center font-bold">하이하이안녕하세요</ThemedText>
       </ThemedView>
     </ParallaxScrollView>
   );
@@ -58,6 +62,7 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   titleContainer: {
     flexDirection: 'row',
+    justifyContent: 'center',
     alignItems: 'center',
     gap: 8,
   },

@@ -3,10 +3,18 @@ import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import 'react-native-reanimated';
+import { usePushNotifications } from "../usePushNotifications";
 
 import { useColorScheme } from '@/hooks/useColorScheme';
 
 export default function RootLayout() {
+  const { expoPushToken, notification } = usePushNotifications();
+  const data = JSON.stringify(notification, undefined, 2);  
+  
+  console.log("Token: ", expoPushToken);
+  console.log("App: ", data);
+
+
   const colorScheme = useColorScheme();
   const [loaded] = useFonts({
     SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),

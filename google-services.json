@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "344715749449",
+    "project_id": "mgmt-4ab16",
+    "storage_bucket": "mgmt-4ab16.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:344715749449:android:fa67c47df93cbd29b77798",
+        "android_client_info": {
+          "package_name": "com.lksoft.mgmt"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAebS1USSood-gOBnqAwlVskAyyrALV_p0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
