@@ -4,7 +4,7 @@ import * as SecureStore from 'expo-secure-store';
 
 const router = useRouter();
 const api = axios.create({
-  baseURL: 'https://your-api-url.com',
+  baseURL: 'http://mapi.kvilla.co.kr',
 });
 
 // 요청에 토큰 자동 추가
@@ -32,7 +32,7 @@ api.interceptors.response.use(
 
       try {
         const refreshToken = await SecureStore.getItemAsync('refresh_token');
-        const res = await axios.post('https://your-api-url.com/refresh', {
+        const res = await axios.post('http://mapi.kvilla.co.kr/token/tokenCheck', {
           refreshToken,
         });
 

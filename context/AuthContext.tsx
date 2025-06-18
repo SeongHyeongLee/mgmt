@@ -20,8 +20,8 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
   const [loading, setLoading] = useState(true);
 
   const checkToken = async () => {
-    const token = await SecureStore.getItemAsync('token');
-    setIsAuthenticated(!!token);
+    const jwt_token = await SecureStore.getItemAsync('jwt_token');
+    setIsAuthenticated(!!jwt_token);
     setLoading(false);
   };
 
